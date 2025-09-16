@@ -89,8 +89,8 @@
 
     /* Headshot */
     .headshot {
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid #007acc;
@@ -112,11 +112,11 @@
       box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
     }
     .card img {
-      width: 100%;
-      height: 200px;
+      width: 350px;   /* fixed width */
+      height: 250px;  /* fixed height */
       object-fit: contain;
-      border-radius: 10px;
-      margin-bottom: 10px;
+      margin: 0 auto 10px; /* center horizontally */
+      display: block;
     }
 
     /* Skills */
@@ -295,7 +295,7 @@
       <h1>Outside of Work</h1>
       <div class="grid grid-2x2">
         <div class="card">
-          <img src="20230217_114248.jpg" alt="Family Photo" class="family-photo">
+          <img src="fam.jpeg" alt="Family Photo" class="family-photo">
           <p>My family is my greatest inspiration. My father is an engineer, my mother is a mathematics teacher, 
           and my sister is a doctor with the NHS in the UK. Their dedication and values motivate me to work hard every day.</p>
         </div>
