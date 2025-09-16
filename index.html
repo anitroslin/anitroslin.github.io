@@ -3,152 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <title>Anit Roslin Paul | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script> <!-- Replace with your FA kit -->
 </head>
 <body>
-  <!-- SIDEBAR -->
-  <nav class="sidebar">
-    <h2>ARP</h2>
-    <ul>
-      <li class="active" onclick="openTab('about')">About</li>
-      <li onclick="openTab('experience')">Experience</li>
-      <li onclick="openTab('education')">Education</li>
-      <li onclick="openTab('projects')">Projects</li>
-      <li onclick="openTab('outside')">Outside of Work</li>
-      <li onclick="openTab('contact')">Contact</li>
-    </ul>
-  </nav>
-
-  <!-- MAIN CONTENT -->
-  <main class="content">
-
-    <!-- ABOUT -->
-    <section id="about" class="tab active">
-      <img src="IMG_2542.JPG" alt="Headshot" class="headshot">
-      <h1>Anit Roslin Paul</h1>
-      <p class="tagline">Data Analytics Professional | MSBA @ USC | Ex-AWS, IBM, Shopalyst</p>
-      <p class="about-text">
-        I’m deeply passionate about automation, analytics, and data science. 
-        My journey has been about transforming raw data into insights that drive real-world impact. 
-        From automating CI/CD pipelines at IBM, to building analytics platforms at AWS, 
-        to enabling smarter digital commerce at Shopalyst, I’ve consistently sought opportunities 
-        to bridge the gap between technology and business value.  
-        Currently, at USC, I’m expanding my expertise in machine learning, 
-        big data, and AI-driven decision-making, with a focus on applying these skills 
-        to solve high-impact problems.  
-        I believe in the power of data to tell stories, drive change, and inspire innovation.
-      </p>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="tab">
-      <h2>Experience</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="aws.png" alt="AWS">
-          <h3>Amazon Web Services (AWS)</h3>
-          <ul>
-            <li>Engineered an analytics platform with 20+ dashboards using ML tagging, summarization, and alerts, boosting decision-making efficiency by 75%.</li>
-            <li>Developed clustering and AutoML models to identify high-risk product-region segments with 83% accuracy, integrated into QuickSight dashboards.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <img src="IMG-20230925-WA0021.jpg" alt="IBM">
-          <h3>IBM</h3>
-          <ul>
-            <li>Automated recurring workflows with CI/CD pipelines (Jenkins, Groovy, Python, Bash), achieving 40% uplift in productivity.</li>
-            <li>Implemented alerts for resource thresholds, reducing vulnerabilities and improving utilization by 30%.</li>
-            <li>Containerized Watsonx.data subsystems with Docker/Kubernetes, boosting scalability and responsiveness by 35%.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <img src="shopalyst.png" alt="Shopalyst">
-          <h3>Shopalyst</h3>
-          <ul>
-            <li>Built computer vision models for product classification and logo detection, achieving 92% accuracy for automated brand recognition.</li>
-            <li>Deployed ML models on AWS SageMaker, reducing latency by 20% and improving real-time digital commerce insights.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <img src="reigate.jpg" alt="Reigate Builders">
-          <h3>Reigate Builders</h3>
-          <ul>
-            <li>Developed Python-based automation for client follow-ups and dashboards, boosting sales conversion rates by 50%.</li>
-            <li>Created task tracking dashboards that saved ~15 staff-hours weekly and reduced delays by 25%.</li>
-          </ul>
-        </div>
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2>Anit Roslin Paul</h2>
+      <nav>
+        <ul>
+          <li class="active" onclick="openTab(event, 'about')">About</li>
+          <li onclick="openTab(event, 'experience')">Experience</li>
+          <li onclick="openTab(event, 'education')">Education</li>
+          <li onclick="openTab(event, 'projects')">Projects</li>
+          <li onclick="openTab(event, 'outside')">Outside of Work</li>
+        </ul>
+      </nav>
+      <div class="sidebar-links">
+        <a href="https://linkedin.com/in/anitroslinpaul" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/anitroslin" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:anitrosl@usc.edu"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:anitpaulroslin@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
       </div>
-    </section>
+    </aside>
 
-    <!-- EDUCATION -->
-    <section id="education" class="tab">
-      <h2>Education</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="usc.png" alt="USC">
-          <h3>University of Southern California</h3>
-          <p>MS in Business Analytics (STEM), GPA: 3.8/4.0. Coursework: Data-Driven Decision Making, GenAI & ML, Big Data. Board Member, Business Analytics Student Association.</p>
-        </div>
-        <div class="card">
-          <img src="apj.jpg" alt="APJ Abdul Kalam University">
-          <h3>APJ Abdul Kalam Technological University</h3>
-          <p>B.Tech in Computer Science, GPA: 3.7/4.0. Built strong foundations in algorithms, computing, and software engineering, paving the way for my career in analytics.</p>
-        </div>
-      </div>
-    </section>
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      <!-- ABOUT -->
+      <section id="about" class="tab active">
+        <img src="IMG_2542.JPG" alt="Headshot" class="headshot">
+        <h1>Anit Roslin Paul</h1>
+        <p class="subtitle">Data Analytics Professional | MSBA @ USC | Ex-AWS, IBM, Shopalyst</p>
+        <p>
+          I’m deeply passionate about automation, analytics, and data science. My journey has been about transforming raw data into insights that drive real-world impact. From automating CI/CD pipelines at IBM, to building analytics platforms at AWS, to enabling smarter digital commerce at Shopalyst, I’ve consistently sought opportunities to bridge the gap between technology and business value.
+        </p>
+        <p>
+          Currently, at USC, I’m expanding my expertise in machine learning, big data, and AI-driven decision-making, with a focus on applying these skills to solve high-impact problems. I believe in the power of data to tell stories, drive change, and inspire innovation.
+        </p>
+      </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="tab">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>LSTM Autoencoder for Fraud Detection</h3>
-          <p>Developed an LSTM autoencoder for unsupervised anomaly detection on transaction time-series, converting reconstruction error into anomaly scores and setting thresholds to flag fraudulent activity with 91% accuracy.</p>
+      <!-- EXPERIENCE -->
+      <section id="experience" class="tab">
+        <h2>Experience</h2>
+        <div class="grid-2x2">
+          <div class="card">
+            <img src="IMG_4057.jpg" alt="AWS">
+            <h3>Amazon Web Services (AWS)</h3>
+            <ul>
+              <li>Engineered an analytics platform with 20+ dashboards using ML tagging, boosting decision-making efficiency by 75%.</li>
+              <li>Developed clustering and AutoML models to identify high-risk product-region segments with 83% accuracy, integrated into QuickSight dashboards.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <img src="IMG-20230925-WA0021.jpg" alt="IBM">
+            <h3>IBM</h3>
+            <ul>
+              <li>Automated CI/CD workflows with Jenkins, Groovy, Python, Bash, achieving 40% uplift in productivity.</li>
+              <li>Implemented alerts for resource thresholds, reducing vulnerabilities and improving utilization by 30%.</li>
+              <li>Containerized Watsonx.data subsystems with Docker/Kubernetes, boosting scalability and responsiveness by 35%.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <img src="shopalyst.png" alt="Shopalyst">
+            <h3>Shopalyst</h3>
+            <ul>
+              <li>Built computer vision models for product classification and logo detection with 92% accuracy.</li>
+              <li>Deployed ML models on AWS SageMaker, reducing latency by 20% and improving real-time commerce insights.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <img src="reigate.jpg" alt="Reigate Builders">
+            <h3>Reigate Builders</h3>
+            <ul>
+              <li>Developed Python-based automation for client follow-ups and dashboards, boosting sales conversion rates by 50%.</li>
+              <li>Created task tracking dashboards that saved ~15 staff-hours weekly and reduced delays by 25%.</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-          <h3>Employee Attrition Analysis</h3>
-          <p>Applied causal inference with Difference-in-Differences (DiD) and logistic regression to workforce datasets to measure how promotions and compensation influenced employee attrition, validating results with propensity score methods</p>
-        </div>
-        <div class="card">
-          <h3>Real-Time Stock Market Analytics Pipeline</h3>
-          <p>Built a real-time ETL pipeline ingesting streaming stock data with Spark & Airflow, transforming and storing in Snowflake for analytics and created Tableau dashboards to track price movements, volatility, and sector trends.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- OUTSIDE -->
-    <section id="outside" class="tab">
-      <h2>Outside of Work</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="IMG-20240814-WA0003.jpg" alt="USC personal">
-          <p>Passionate about mentoring and learning in academic communities at USC.</p>
+      <!-- EDUCATION -->
+      <section id="education" class="tab">
+        <h2>Education</h2>
+        <div class="grid-2x2">
+          <div class="card">
+            <img src="usc.png" alt="USC">
+            <h3>University of Southern California</h3>
+            <ul>
+              <li>Dean’s List for academic excellence</li>
+              <li>Board Member, BASA – Professional Development team (workshops, networking, career panels)</li>
+              <li>Secured early internship, mentored peers in job search</li>
+              <li>Teaching Assistant for MBA course "Business Environment and Leadership"</li>
+              <li>Coursework: Data Science, Machine Learning, Statistics, Business Analytics, Strategy</li>
+            </ul>
+          </div>
+          <div class="card">
+            <img src="apj.jpg" alt="APJ Abdul Kalam University">
+            <h3>APJ Abdul Kalam Technological University</h3>
+            <ul>
+              <li>Core CS courses: Data Structures, Algorithms, OS, Databases, Networks</li>
+              <li>Taught programming to first-year non-CS students</li>
+              <li>Active member of IEEE & ACM chapters, organizing coding workshops</li>
+              <li>Final year project: Pulmonary Nodule Detection using 3D-CNN & multipath CNN</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-          <img src="20230217_114248.jpg" alt="Family">
-          <p>Family time keeps me grounded and inspires me to build solutions that make a meaningful impact.</p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="tab">
+        <h2>Projects</h2>
+        <div class="grid-2x2">
+          <div class="card"><h3>AWS DashHub</h3><p>Centralized dashboard platform integrating 20+ dashboards with ML tagging and real-time alerts.</p></div>
+          <div class="card"><h3>YOLO Brand Detection</h3><p>YOLO-based logo detection system for digital commerce, boosting ad performance.</p></div>
+          <div class="card"><h3>MicroCash Network</h3><p>Research project on blockchain consensus under network partitions.</p></div>
+          <div class="card"><h3>Reinforcement Learning Hedging</h3><p>Designed RL-based agents for crypto options hedging using DERI protocol.</p></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="tab">
-      <h2>Contact</h2>
-      <p>You can reach me via:</p>
-      <p><a href="mailto:anitrosl@usc.edu">📧 Email</a></p>
-      <p><a href="https://linkedin.com/in/anitroslinpaul" target="_blank">🔗 LinkedIn</a></p>
-      <p><a href="https://github.com/anitroslin" target="_blank">💻 GitHub</a></p>
-    </section>
-
-  </main>
-
+      <!-- OUTSIDE -->
+      <section id="outside" class="tab">
+        <h2>Outside of Work</h2>
+        <div class="grid-2x2">
+          <div class="card">
+            <img src="IMG-20240814-WA0003.jpg" alt="USC Personal">
+            <p>Passionate about mentoring and learning at USC, where my academic journey continues to inspire me.</p>
+          </div>
+          <div class="card">
+            <img src="20230217_114248.jpg" alt="Family">
+            <p>Family time keeps me grounded and inspires me to build solutions that make a meaningful impact.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
