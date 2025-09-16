@@ -22,6 +22,8 @@
       flex-direction: column;
       justify-content: space-between;
       position: fixed;
+      left: 0;
+      top: 0;
     }
     .sidebar h2 {
       text-align: center;
@@ -52,7 +54,7 @@
     .sidebar-footer a {
       color: #fff;
       margin: 0 8px;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
     /* Main */
     .main {
@@ -71,10 +73,7 @@
       from {opacity: 0;}
       to {opacity: 1;}
     }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
+    h1 { font-size: 2rem; margin-bottom: 15px; }
     p { line-height: 1.6; }
     ul { margin: 0; padding-left: 20px; }
     /* Headshot */
@@ -87,10 +86,7 @@
       margin-bottom: 20px;
     }
     /* Grid + Cards */
-    .grid {
-      display: grid;
-      gap: 20px;
-    }
+    .grid { display: grid; gap: 20px; }
     .grid-2x2 { grid-template-columns: repeat(2, 1fr); }
     .grid-4 { grid-template-columns: repeat(4, 1fr); }
     .card {
@@ -146,21 +142,13 @@
 
   <!-- MAIN -->
   <div class="main">
-
     <!-- About -->
     <section id="about" class="active">
       <img src="IMG_2542.JPG" alt="Headshot" class="headshot">
       <h1>Anit Roslin Paul</h1>
       <p><b>Data Analytics Professional | MSBA @ USC | Ex-AWS, IBM, Shopalyst</b></p>
-      <p>
-        I’m deeply passionate about automation, analytics, and data science. My journey has been about transforming raw data into insights that drive real-world impact. 
-        From automating CI/CD pipelines at IBM, to building analytics platforms at AWS, to enabling smarter digital commerce at Shopalyst, I’ve consistently sought 
-        opportunities to bridge the gap between technology and business value.
-      </p>
-      <p>
-        At USC, I’m expanding my expertise in machine learning, big data, and AI-driven decision-making, with a focus on applying these skills to solve high-impact problems. 
-        I believe in the power of data to tell stories, drive change, and inspire innovation.
-      </p>
+      <p>I’m deeply passionate about automation, analytics, and data science. My journey has been about transforming raw data into insights that drive real-world impact. From automating CI/CD pipelines at IBM, to building analytics platforms at AWS, to enabling smarter digital commerce at Shopalyst, I’ve consistently sought opportunities to bridge the gap between technology and business value.</p>
+      <p>Currently, at USC, I’m expanding my expertise in machine learning, big data, and AI-driven decision-making, with a focus on applying these skills to solve high-impact problems. I believe in the power of data to tell stories, drive change, and inspire innovation.</p>
     </section>
 
     <!-- Skills -->
@@ -179,39 +167,36 @@
       <h1>Work Experience</h1>
       <div class="grid grid-2x2">
         <div class="card">
-          <img src="aws.png" alt="AWS">
-          <h3>Amazon Web Services (AWS)</h3>
-          <p><i>Business Intelligence Engineer Intern</i></p>
+          <img src="IMG_4057.jpg" alt="AWS">
+          <h3>Amazon Web Services (AWS) – Business Intelligence Engineer Intern</h3>
           <ul>
-            <li>Engineered an analytics platform integrating 20+ dashboards with ML tagging, summarization, and alerts — improving decision-making efficiency by 75%.</li>
-            <li>Developed clustering and AutoML models to identify high-risk product-region segments with 83% accuracy, delivered in QuickSight dashboards.</li>
+            <li>Engineered an analytics platform integrating 20+ dashboards with ML tagging, summarization, and alerts — boosting decision-making efficiency by 75%.</li>
+            <li>Developed clustering and AutoML models to find high-risk product-region segments with 83% accuracy and delivered results in QuickSight dashboards.</li>
           </ul>
         </div>
         <div class="card">
           <img src="IMG-20230925-WA0021.jpg" alt="IBM">
-          <h3>IBM</h3>
-          <p><i>Software Developer (DevOps)</i></p>
+          <h3>IBM – Software Developer (DevOps)</h3>
           <ul>
-            <li>Automated workflows with CI/CD pipelines (Jenkins, Groovy, Python, Bash), boosting productivity by 40%.</li>
-            <li>Implemented automated cleanup and alerts; improved resource utilization by 30% and reduced vulnerabilities.</li>
-            <li>Led redesign and containerization of Watsonx.data subsystems using Docker/Kubernetes, boosting responsiveness by 35%.</li>
+            <li>Automated workflows and CI/CD pipelines (Jenkins, Groovy, Python, Bash), achieving 40% uplift in productivity.</li>
+            <li>Implemented cluster cleanup & usage alerts, improving resource utilization by 30%.</li>
+            <li>Led containerization of Watsonx.data with Docker/Kubernetes, boosting scalability and responsiveness by 35%.</li>
           </ul>
         </div>
         <div class="card">
           <img src="shopalyst.png" alt="Shopalyst">
-          <h3>Shopalyst</h3>
+          <h3>Shopalyst – Data Analyst</h3>
           <ul>
-            <li>Built computer vision models for product classification and logo detection, achieving 92% accuracy.</li>
-            <li>Deployed ML models on AWS SageMaker, reducing latency by 20% and improving real-time commerce insights.</li>
+            <li>Built computer vision models for classification & logo detection (YOLO, TensorFlow), achieving 92% accuracy.</li>
+            <li>Deployed ML models on AWS SageMaker, cutting latency by 20% for real-time digital commerce analytics.</li>
           </ul>
         </div>
         <div class="card">
           <img src="reigate.jpg" alt="Reigate Builders">
-          <h3>Reigate Builders</h3>
-          <p><i>Data Analyst (Part-time)</i></p>
+          <h3>Reigate Builders – Data Analyst (Part-time)</h3>
           <ul>
-            <li>Developed Python-based automation for client follow-ups, boosting sales conversion rates by 50%.</li>
-            <li>Created workflow tracking dashboards, saving ~15 staff-hours weekly and cutting task delays by 25%.</li>
+            <li>Developed Python-based automation for daily follow-ups & sales dashboards, boosting conversion rates by 50%.</li>
+            <li>Created workflow tracking dashboards, saving ~15 staff-hours weekly and reducing delays by 25%.</li>
           </ul>
         </div>
       </div>
@@ -223,26 +208,25 @@
       <div class="grid grid-2x2">
         <div class="card">
           <img src="usc.png" alt="USC">
-          <h3>University of Southern California</h3>
-          <p><i>Master of Science in Business Analytics (STEM), GPA: 3.8/4.0 (Dec 2025)</i></p>
+          <h3>University of Southern California – MS Business Analytics</h3>
+          <p>GPA: 3.8/4.0 (Expected Dec 2025)</p>
           <ul>
             <li>Coursework: Data-Driven Decision Making, Driving Business Transformation with GenAI & ML, Advanced SQL, Big Data</li>
             <li>Dean’s List for academic excellence</li>
-            <li>Board Member, BASA (Professional Development)</li>
-            <li>Mentored peers in securing internships</li>
-            <li>Teaching Assistant for MBA course: Business Environment and Leadership</li>
-            <li>Completed coursework spanning DS, ML, statistics, business analytics, and strategy</li>
+            <li>Board Member, Business Analytics Student Association (BASA)</li>
+            <li>Mentored peers and helped secure internships</li>
+            <li>Teaching Assistant for MBA course Business Environment and Leadership</li>
           </ul>
         </div>
         <div class="card">
           <img src="apj.jpg" alt="APJ">
-          <h3>APJ Abdul Kalam Technological University</h3>
-          <p><i>Bachelor of Technology, Computer Science, GPA: 3.7/4.0 (Jun 2022)</i></p>
+          <h3>APJ Abdul Kalam Technological University – B.Tech Computer Science</h3>
+          <p>GPA: 3.7/4.0 (June 2022)</p>
           <ul>
-            <li>Core coursework: DS, Algorithms, OS, Databases, Networks</li>
-            <li>Taught programming to non-tech freshmen</li>
-            <li>Member of IEEE and ACM student chapters</li>
-            <li>Final year project on Pulmonary Nodule Detection using deep learning (3D-CNN, multipath CNN)</li>
+            <li>Completed core CS courses: Data Structures, Algorithms, OS, Databases, Networks</li>
+            <li>Taught programming to first-year non-technical students</li>
+            <li>Member of IEEE & ACM student chapters</li>
+            <li>Final year project: Pulmonary Nodule Detection using Deep Learning (3D-CNN)</li>
           </ul>
         </div>
       </div>
@@ -252,22 +236,10 @@
     <section id="projects">
       <h1>Projects</h1>
       <div class="grid grid-2x2">
-        <div class="card">
-          <h3>Employee Attrition Analysis (2025)</h3>
-          <p>Applied DiD and logistic regression to assess the impact of promotions and compensation on attrition, validated with propensity score methods.</p>
-        </div>
-        <div class="card">
-          <h3>Real-Time Stock Market Analytics Pipeline (2024)</h3>
-          <p>Built Spark & Airflow pipeline ingesting live stock data, stored in Snowflake, and visualized in Tableau for volatility and sector trends.</p>
-        </div>
-        <div class="card">
-          <h3>LSTM Autoencoder for Fraud Detection (2025)</h3>
-          <p>Developed unsupervised anomaly detection on transaction time-series, flagging fraud with 91% accuracy.</p>
-        </div>
-        <div class="card">
-          <h3>Probabilistic Server Lifetime Estimation (2024)</h3>
-          <p>Designed neural model predicting transient server lifetimes, achieving 95% accuracy in reliability forecasts.</p>
-        </div>
+        <div class="card"><h3>Employee Attrition Analysis (2025)</h3><p>Applied DiD and logistic regression on workforce datasets; validated with propensity score methods.</p></div>
+        <div class="card"><h3>Real-Time Stock Market Analytics Pipeline (2024)</h3><p>Built Spark & Airflow ETL for streaming stock data, stored in Snowflake, dashboards in Tableau.</p></div>
+        <div class="card"><h3>LSTM Autoencoder for Fraud Detection (2025)</h3><p>Developed unsupervised anomaly detection on transaction time-series, 91% fraud detection accuracy.</p></div>
+        <div class="card"><h3>Probabilistic Server Lifetime Estimation (2024)</h3><p>Deep learning model predicting transient server lifetimes; 95% accuracy in reliability forecasts.</p></div>
       </div>
     </section>
 
@@ -275,18 +247,14 @@
     <section id="outside">
       <h1>Outside of Work</h1>
       <img src="20230217_114248.jpg" alt="Family Photo" class="family-photo">
-      <p>I value family, mentorship, and creative problem-solving. My free time is often spent mentoring peers, engaging with networks, and spending quality time with my family, which keeps me grounded and inspired.</p>
+      <p>I value family, mentorship, and creative problem-solving. My free time is often spent mentoring peers, engaging with professional networks, and spending quality time with my family, which keeps me grounded and inspired.</p>
     </section>
-
   </div>
 
   <script>
     function openSection(id, el) {
-      // Hide all sections
-      document.querySelectorAll('.tabcontent').forEach(sec => sec.classList.remove('active'));
-      // Show clicked
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
       document.getElementById(id).classList.add('active');
-      // Update sidebar highlight
       document.querySelectorAll('.sidebar nav a').forEach(a => a.classList.remove('active'));
       el.classList.add('active');
     }
