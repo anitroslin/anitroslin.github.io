@@ -1,0 +1,107 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  background: #fafafa;
+}
+
+/* Hero Section */
+header {
+  background: linear-gradient(135deg, #1a1a1a, #007acc);
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+header .headshot {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+}
+header h1 {
+  font-size: 3em;
+  margin: 10px 0;
+}
+header p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+.buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.buttons a:nth-child(1) { background: #007acc; color: #fff; }
+.buttons a:nth-child(2) { background: #ff9800; color: #fff; }
+.buttons a:hover { opacity: 0.85; }
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+h2 {
+  color: #222;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Grid + Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 14px rgba(0,0,0,0.15);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+.card h3 {
+  margin-top: 0;
+}
+.card ul {
+  text-align: left;
+  margin: 0;
+  padding-left: 18px;
+}
+.card p {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+footer a {
+  color: #ff9800;
+  text-decoration: none;
+}
