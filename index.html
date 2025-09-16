@@ -2,94 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anit Roslin Paul | Data Analytics</title>
+  <title>Anit Roslin Paul | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
-    header { background: #1a1a1a; color: #fff; text-align: center; padding: 60px 20px; }
-    header h1 { font-size: 3em; margin: 0; }
-    header p { font-size: 1.2em; margin-top: 10px; }
-    nav a { color: #007acc; margin: 0 10px; text-decoration: none; }
-    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
-    h2 { color: #222; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .card { background: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    .card h3 { margin-top: 0; }
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background: #fafafa; }
+    header { background: linear-gradient(135deg, #1a1a1a, #007acc); color: #fff; text-align: center; padding: 80px 20px; }
+    header img { width: 160px; border-radius: 50%; margin-bottom: 20px; border: 4px solid #fff; }
+    header h1 { font-size: 2.8em; margin: 10px 0; }
+    header p { font-size: 1.2em; margin-bottom: 20px; }
+    .buttons a { display: inline-block; margin: 5px; padding: 10px 20px; border-radius: 5px; font-weight: bold; text-decoration: none; transition: 0.3s; }
+    .buttons a:first-child { background: #fff; color: #007acc; }
+    .buttons a:nth-child(2) { background: #007acc; color: #fff; }
+    .buttons a:nth-child(3) { background: #ff9800; color: #fff; }
+    .buttons a:hover { opacity: 0.85; }
+
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    h2 { color: #222; margin-bottom: 25px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 14px rgba(0,0,0,0.15); }
+    .card img { width: 100%; border-radius: 8px; margin-bottom: 15px; }
+
+    .skills { text-align: center; }
+    .skills img { margin: 10px; height: 40px; }
+
     footer { background: #1a1a1a; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
-    a { color: #007acc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    footer a { color: #ff9800; text-decoration: none; }
   </style>
 </head>
 <body>
+
+  <!-- HERO SECTION -->
   <header>
+    <img src="IMG_2542.JPG" alt="Professional Headshot">
     <h1>Anit Roslin Paul</h1>
     <p>Data Analytics Professional | MSBA @ USC | Ex-AWS, IBM, Shopalyst</p>
-    <p>
-      <a href="mailto:anitrosl@usc.edu" style="color:#fff;">Email</a> •
-      <a href="https://linkedin.com/in/anitroslinpaul" style="color:#fff;">LinkedIn</a> •
-      <a href="https://github.com/anitroslinpaul" style="color:#fff;">GitHub</a>
-    </p>
+    <div class="buttons">
+      <a href="resume.pdf">Download Resume</a>
+      <a href="https://linkedin.com/in/anitroslinpaul">LinkedIn</a>
+      <a href="mailto:anitrosl@usc.edu">Email</a>
+    </div>
   </header>
 
+  <!-- ABOUT -->
   <section>
     <h2>About Me</h2>
-    <p>I’m passionate about transforming raw data into decision-ready insights. With hands-on experience at AWS, IBM, Reigate Builders, and Shopalyst, I enjoy bridging business problems and data-driven solutions. Currently pursuing my MS in Business Analytics at USC, I focus on analytics, visualization, and applied machine learning for impactful outcomes.</p>
+    <p>I’m passionate about transforming raw data into decision-ready insights. With hands-on experience at AWS, IBM, Reigate Builders, and Shopalyst, I bridge the gap between business strategy and data-driven solutions. Currently pursuing my MS in Business Analytics at USC, I focus on analytics, visualization, and applied machine learning to deliver impact.</p>
   </section>
 
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="IMG-20230925-WA0021.jpg" alt="IBM Office">
+        <h3>IBM</h3>
+        <p>Automated CI/CD workflows with Jenkins and containerized subsystems, improving scalability and productivity across Watsonx.data.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo">
+        <h3>Amazon Web Services (AWS)</h3>
+        <p>Built an analytics platform integrating 20+ dashboards with ML tagging, boosting decision-making efficiency by 75% for sales teams.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="Shopalyst">
+        <h3>Shopalyst</h3>
+        <p>Contributed to digital commerce analytics, optimizing data workflows for real-time consumer insights solutions.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="Reigate Builders">
+        <h3>Reigate Builders</h3>
+        <p>Developed Python-based automation for client follow-ups and sales dashboards, improving conversion rates by 50%.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <img src="IMG-20240814-WA0003.jpg" alt="USC Campus">
+      <h3>University of Southern California</h3>
+      <p>MS in Business Analytics (STEM), GPA: 3.8/4.0. Coursework in Data-Driven Decision Making, GenAI & ML, Big Data. Member of Business Analytics Student Association.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Employee Attrition Analysis</h3>
+        <p>Applied causal inference to measure how promotions and compensation influence attrition, validated with propensity score methods.</p>
+      </div>
+      <div class="card">
+        <h3>Real-Time Stock Analytics</h3>
+        <p>Developed a Spark & Airflow pipeline streaming stock data into Snowflake, with Tableau dashboards for real-time market insights.</p>
+      </div>
+      <div class="card">
+        <h3>Fraud Detection (LSTM Autoencoder)</h3>
+        <p>Built an anomaly detection model for transactions with 91% accuracy in identifying fraud using time-series reconstruction errors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
   <section>
     <h2>Skills</h2>
-    <p>Python • SQL • R • Tableau • Looker • AWS • Snowflake • Redshift • Machine Learning • Time-Series Forecasting • Causal Inference</p>
-  </section>
-
-  <section>
-    <h2>Featured Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3><a href="#">Employee Attrition Analysis</a></h3>
-        <p>Applied causal inference (DiD, logistic regression) to study the effect of promotions & compensation on attrition.</p>
-      </div>
-      <div class="card">
-        <h3><a href="#">Real-Time Stock Analytics</a></h3>
-        <p>Developed a streaming ETL pipeline with Spark & Airflow, integrated with Snowflake, and built Tableau dashboards for live market insights.</p>
-      </div>
-      <div class="card">
-        <h3><a href="#">Fraud Detection with LSTM Autoencoder</a></h3>
-        <p>Built an anomaly detection model for transaction data, achieving 91% accuracy in identifying fraudulent activity.</p>
-      </div>
+    <div class="skills">
+      <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+      <img src="https://img.shields.io/badge/SQL-336791?logo=postgresql&logoColor=white" alt="SQL">
+      <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white" alt="Tableau">
+      <img src="https://img.shields.io/badge/Looker-4285F4?logo=google&logoColor=white" alt="Looker">
+      <img src="https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white" alt="AWS">
+      <img src="https://img.shields.io/badge/Snowflake-29B5E8?logo=snowflake&logoColor=white" alt="Snowflake">
+      <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker">
     </div>
   </section>
 
+  <!-- PERSONAL -->
   <section>
-    <h2>Experience Highlights</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Amazon Web Services (AWS)</h3>
-        <p>Designed an analytics platform integrating 20+ dashboards with ML tagging, improving sales team decision-making efficiency by 75%.</p>
-      </div>
-      <div class="card">
-        <h3>IBM</h3>
-        <p>Automated workflows with Jenkins CI/CD pipelines and containerized subsystems, improving productivity and scalability by 35%.</p>
-      </div>
-      <div class="card">
-        <h3>Reigate Builders</h3>
-        <p>Built Python-based frameworks for daily client follow-ups and sales dashboards, increasing conversion rates by 50%.</p>
-      </div>
-      <div class="card">
-        <h3>Shopalyst</h3>
-        <p>Contributed to digital commerce analytics by optimizing data workflows and supporting real-time consumer insights solutions.</p>
-      </div>
+    <h2>Outside of Work</h2>
+    <div class="card" style="text-align:center;">
+      <img src="20230217_114248.jpg" alt="Family Photo">
+      <p>Family time keeps me grounded and inspires me to build solutions that make a meaningful impact.</p>
     </div>
   </section>
 
-  <section>
-    <h2>Get in Touch</h2>
-    <p>📩 <a href="mailto:anitrosl@usc.edu">anitrosl@usc.edu</a></p>
-    <p>🔗 <a href="https://linkedin.com/in/anitroslinpaul">linkedin.com/in/anitroslinpaul</a></p>
-    <p>💻 <a href="https://github.com/anitroslinpaul">github.com/anitroslinpaul</a></p>
-  </section>
-
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Anit Roslin Paul</p>
+    <p>© 2025 Anit Roslin Paul | <a href="mailto:anitrosl@usc.edu">Contact Me</a></p>
   </footer>
+
 </body>
 </html>
+
 
