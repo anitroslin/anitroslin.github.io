@@ -4,44 +4,17 @@
   <meta charset="UTF-8">
   <title>Anit Roslin Paul | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background: #fafafa; }
-    header { background: url('usc.png') no-repeat center center/cover; color: #fff; text-align: center; padding: 120px 20px; position: relative; }
-    header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); }
-    header * { position: relative; z-index: 1; }
-    header img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 5px solid #fff; }
-    header h1 { font-size: 3em; margin: 10px 0; }
-    header p { font-size: 1.3em; margin-bottom: 20px; }
-    .buttons a { display: inline-block; margin: 5px; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; transition: 0.3s; }
-    .buttons a:nth-child(1) { background: #007acc; color: #fff; }
-    .buttons a:nth-child(2) { background: #ff9800; color: #fff; }
-    .buttons a:hover { opacity: 0.85; }
-
-    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
-    h2 { color: #222; margin-bottom: 25px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 14px rgba(0,0,0,0.15); }
-    .card img { width: 100%; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 15px; background: #fff; }
-    .card ul { text-align: left; margin: 0; padding-left: 18px; }
-
-    .skills { text-align: center; }
-    .skills img { margin: 10px; height: 40px; }
-
-    footer { background: #1a1a1a; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
-    footer a { color: #ff9800; text-decoration: none; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- HERO SECTION -->
   <header>
-    <img src="IMG_2542.JPG" alt="Professional Headshot">
+    <img src="IMG_2542.JPG" alt="Professional Headshot" class="headshot">
     <h1>Anit Roslin Paul</h1>
     <p>Data Analytics Professional | MSBA @ USC | Ex-AWS, IBM, Shopalyst</p>
     <div class="buttons">
-      <a href="https://linkedin.com/in/anitroslinpaul">LinkedIn</a>
+      <a href="https://linkedin.com/in/anitroslinpaul" target="_blank">LinkedIn</a>
       <a href="mailto:anitrosl@usc.edu">Email</a>
     </div>
   </header>
@@ -60,32 +33,36 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo">
         <h3>Amazon Web Services (AWS)</h3>
         <ul>
-          <li>Engineered an analytics platform with 20+ dashboards using ML tagging, summarization, and alerts — boosting decision-making efficiency by 75%.</li>
-          <li>Developed clustering and AutoML models to find high-risk product-region segments with 83% accuracy and delivered results in QuickSight dashboards.</li>
+          <li>Engineered an analytics platform in collaboration with stakeholders, integrating 20+ dashboards with ML tagging, summarization, and alerts to deliver faster insights for the AWS sales team, improving decision-making efficiency by 75%. </li>
+          <li>Developed clustering and AutoML models to find high-risk product-region segments with 83% accuracy, integrated results into Amazon QuickSight dashboards and delivered recommendations that informed retention and growth strategies.</li>
         </ul>
       </div>
       <div class="card">
         <img src="IMG-20230925-WA0021.jpg" alt="IBM Office">
         <h3>IBM</h3>
         <ul>
-          <li>Automated recurring workflows with CI/CD pipelines (Jenkins, Groovy, Python, Bash) — achieving 40% uplift in engineering productivity.</li>
-          <li>Implemented cron jobs and configured alerts for resource thresholds, reducing vulnerabilities and improving resource utilization by 30%.</li>
-          <li>Spearheaded containerization of Watsonx.data subsystems with Docker/Kubernetes, boosting scalability and responsiveness by 35%.</li>
+          <li>Automated recurring operational workflows by architecting CI/CD pipelines with Jenkins, applying Groovy, Python, and Bash scripting to accelerate deployments, reduce manual effort, and achieve a 40% uplift in overall engineering productivity. </li>
+          <li>Implemented automated cluster cleanup and configured usage alerts to notify on resource thresholds; resolved high-severity vulnerabilities, enhancing the security and resource utilization of the product by 30%
+ .</li>
+          <li>Spearheaded the containerization of Watsonx.data subsystems such as Presto and Milvus with Docker and Kubernetes, and configured an Nginx load-balancer on RedHat OpenShift, boosting scalability and system responsiveness by 35%
+%.</li>
         </ul>
       </div>
       <div class="card">
         <img src="shopalyst.png" alt="Shopalyst Logo">
         <h3>Shopalyst</h3>
         <ul>
-          <li>Contributed to digital commerce analytics, optimizing data workflows for real-time consumer insights solutions.</li>
+          <li>Designed a YOLO-based computer vision model for logo detection and product classification in a digital commerce platform, achieving 92% accuracy and enabling automated brand recognition across online catalogs and digital ads
+. </li>
+          <li>Deployed the model to production with AWS SageMaker, leveraging EC2 for scalable training and inference; optimized TensorFlow workflows to cut latency by 20% and enhance real-time customer experience on the product discovery platform</li>
         </ul>
       </div>
       <div class="card">
         <img src="reigate.jpg" alt="Reigate Builders Logo">
         <h3>Reigate Builders</h3>
         <ul>
-          <li>Built a Python framework for automated client follow-ups integrated with Looker dashboards — improved conversion rates by 50%.</li>
-          <li>Designed workflow tracking for hundreds of staff tasks with alerts — saving ~15 staff-hours weekly and reducing delays by 25%.</li>
+          <li>Built a Python-based framework that executed daily client follow-ups and integrated Looker dashboards, creating visibility into inquiry and closure rates and improving sales conversion rates by 50%. </li>
+          <li>Designed a workflow tracking solution for hundreds of staff tasks with automated progress monitoring and alerts, giving managers dashboards that saved ~15 staff-hours weekly and reduced task delays by 25%.</li>
         </ul>
       </div>
     </div>
@@ -105,7 +82,7 @@
         <h3>APJ Abdul Kalam Technological University</h3>
         <ul>
           <li>Bachelor of Technology, Computer Science, GPA: 3.7/4.0.</li>
-          <li>Learned fundamentals of computing, algorithms, and software engineering, building a strong foundation for data analytics.</li>
+          <li>Built strong foundations in algorithms, computing, and software engineering, paving the way for my career in analytics.</li>
         </ul>
       </div>
     </div>
@@ -133,5 +110,6 @@
 
 </body>
 </html>
+
 
 
