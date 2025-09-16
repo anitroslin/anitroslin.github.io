@@ -1,10 +1,10 @@
-/* General */
 body {
-  margin: 0;
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
   color: #333;
+  line-height: 1.6;
+  background: #fafafa;
 }
 
 /* Hero Section */
@@ -12,115 +12,85 @@ header {
   background: linear-gradient(135deg, #1a1a1a, #007acc);
   color: #fff;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
-header img {
+header .headshot {
   width: 220px;
   height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #fff;
   margin-bottom: 20px;
+  border: 5px solid #fff;
 }
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3em;
   margin: 10px 0;
 }
 header p {
-  font-size: 1.2rem;
+  font-size: 1.3em;
+  margin-bottom: 20px;
 }
-header .buttons a {
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-weight: bold;
+.buttons a {
   display: inline-block;
-  transition: all 0.3s ease;
+  margin: 5px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
 }
-header .buttons a:first-child {
-  background: #0077b5;
-  color: #fff;
-}
-header .buttons a:last-child {
-  background: #ff9800;
-  color: #fff;
-}
-header .buttons a:hover {
-  opacity: 0.8;
-}
+.buttons a:nth-child(1) { background: #007acc; color: #fff; }
+.buttons a:nth-child(2) { background: #ff9800; color: #fff; }
+.buttons a:hover { opacity: 0.85; }
 
-/* Sections */
+/* Section Styling */
 section {
   padding: 60px 20px;
   max-width: 1100px;
   margin: auto;
 }
 h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  color: #222;
+  margin-bottom: 25px;
   border-bottom: 2px solid #eee;
   padding-bottom: 10px;
 }
 
-/* Cards */
+/* Grid + Cards */
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 .card {
   background: #fff;
-  border-radius: 15px;
   padding: 20px;
-  flex: 1 1 300px;
-  max-width: 450px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
-  text-align: left;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 14px rgba(0,0,0,0.15);
 }
 .card img {
   width: 100%;
-  height: auto;
-  border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 15px;
-  object-fit: contain; /* show full images */
+  background: #fff;
 }
 .card h3 {
-  margin-bottom: 10px;
+  margin-top: 0;
 }
 .card ul {
+  text-align: left;
   margin: 0;
-  padding-left: 20px;
+  padding-left: 18px;
 }
-
-/* About Section */
-#about {
-  padding: 40px 20px 20px 20px; /* reduced bottom space */
+.card p {
   text-align: center;
-}
-#about p {
-  font-size: 1.1rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* Family Photo */
-.family-photo {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
 }
 
 /* Footer */
@@ -130,4 +100,8 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}
+footer a {
+  color: #ff9800;
+  text-decoration: none;
 }
