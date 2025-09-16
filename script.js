@@ -1,10 +1,13 @@
-function openTab(tabId) {
-  let tabs = document.querySelectorAll(".tab");
-  let links = document.querySelectorAll(".sidebar li");
-
-  tabs.forEach(t => t.classList.remove("active"));
-  links.forEach(l => l.classList.remove("active"));
-
-  document.getElementById(tabId).classList.add("active");
-  event.target.classList.add("active");
+function openTab(evt, tabName) {
+  let i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].classList.remove("active");
+  }
+  tablinks = document.querySelectorAll(".sidebar nav ul li");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+  document.getElementById(tabName).classList.add("active");
+  evt.currentTarget.classList.add("active");
 }
