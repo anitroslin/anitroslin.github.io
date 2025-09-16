@@ -13,12 +13,12 @@
   <div class="sidebar">
     <h2>Anit Roslin Paul</h2>
     <nav>
-      <a href="#about" class="active">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#outside">Outside of Work</a>
+      <a href="#" class="tablink active" onclick="openSection('about', this)">About</a>
+      <a href="#" class="tablink" onclick="openSection('skills', this)">Skills</a>
+      <a href="#" class="tablink" onclick="openSection('experience', this)">Experience</a>
+      <a href="#" class="tablink" onclick="openSection('education', this)">Education</a>
+      <a href="#" class="tablink" onclick="openSection('projects', this)">Projects</a>
+      <a href="#" class="tablink" onclick="openSection('outside', this)">Outside of Work</a>
     </nav>
     <div class="sidebar-footer">
       <a href="https://linkedin.com/in/anitroslinpaul" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -32,132 +32,128 @@
   <div class="main">
 
     <!-- ABOUT -->
-    <section id="about">
-      <img src="IMG_2542.JPG" alt="Professional Headshot" class="headshot">
-      <h1>Anit Roslin Paul</h1>
-      <p class="tagline">Data Analytics Professional | MSBA @ USC | Ex-AWS, IBM, Shopalyst</p>
+    <section id="about" class="tabcontent" style="display:block;">
+      <h1>About Me</h1>
       <p>
         I’m deeply passionate about automation, analytics, and data science. My journey has been about transforming raw data into insights that drive real-world impact. 
         From automating CI/CD pipelines at IBM, to building analytics platforms at AWS, to enabling smarter digital commerce at Shopalyst, I’ve consistently sought opportunities 
-        to bridge the gap between technology and business value. Currently, at USC, I’m expanding my expertise in machine learning, big data, and AI-driven decision-making, 
-        with a focus on applying these skills to solve high-impact problems. I believe in the power of data to tell stories, drive change, and inspire innovation.
+        to bridge the gap between technology and business value.
+      </p>
+      <p>
+        Currently, at USC, I’m expanding my expertise in machine learning, big data, and AI-driven decision-making, with a focus on applying these skills to solve high-impact problems. 
+        I believe in the power of data to tell stories, drive change, and inspire innovation.
       </p>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><b>Programming & Data:</b> SQL, Python, R, NoSQL; Pandas, NumPy</li>
-        <li><b>Data Engineering:</b> Data Modeling (Star/Snowflake), Metric Design, Snowflake, Redshift</li>
-        <li><b>Statistical Modeling:</b> A/B testing, hypothesis testing, causal inference, time-series forecasting, regression, classification</li>
-        <li><b>Visualization:</b> Tableau, Google Looker, QuickSight, Excel</li>
-      </ul>
+    <section id="skills" class="tabcontent">
+      <h1>Skills</h1>
+      <div class="grid">
+        <div class="skill-box"><b>Programming & Data</b><br>SQL, Python, R, NoSQL; Pandas, NumPy</div>
+        <div class="skill-box"><b>Data Engineering</b><br>Data Modeling (Star/Snowflake), Metric Design, Snowflake, Redshift</div>
+        <div class="skill-box"><b>Statistical Modeling</b><br>A/B testing, hypothesis testing, causal inference, time-series forecasting, regression, classification</div>
+        <div class="skill-box"><b>Visualization</b><br>Tableau, Google Looker, QuickSight, Excel</div>
+      </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="IMG_4057.jpg" alt="AWS Photo">
-          <h3>Amazon Web Services (AWS)</h3>
-          <p><i>Business Intelligence Engineer Intern</i></p>
-          <ul>
-            <li>Engineered an analytics platform with 20+ dashboards, boosting decision-making efficiency by 75%.</li>
-            <li>Developed clustering and AutoML models to identify high-risk product-region segments with 83% accuracy, integrated into QuickSight dashboards.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <img src="IMG-20230925-WA0021.jpg" alt="IBM Photo">
-          <h3>IBM</h3>
-          <p><i>Software Developer (DevOps)</i></p>
-          <ul>
-            <li>Automated workflows by building CI/CD pipelines with Jenkins, Groovy, Python, Bash — achieving 40% boost in productivity.</li>
-            <li>Implemented automated cleanup & alerts, improving system security and resource utilization by 30%.</li>
-            <li>Led redesign & containerization of core subsystems with Docker/Kubernetes, improving responsiveness by 35%.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <img src="shopalyst.png" alt="Shopalyst Logo">
-          <h3>Shopalyst</h3>
-          <p><i>Data Analyst</i></p>
-          <ul>
-            <li>Built computer vision models for product classification and logo detection with 92% accuracy.</li>
-            <li>Deployed ML models on AWS SageMaker, reducing latency by 20% and improving real-time commerce insights.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <img src="reigate.jpg" alt="Reigate Builders Logo">
-          <h3>Reigate Builders</h3>
-          <p><i>Data Analyst (Part-time)</i></p>
-          <ul>
-            <li>Developed Python-based automation framework for daily client follow-ups, driving 30% increase in sales conversion.</li>
-            <li>Designed workflow tracking dashboards, saving ~15 staff-hours weekly and reducing delays by 25%.</li>
-          </ul>
-        </div>
-      </div>
+    <section id="experience" class="tabcontent">
+      <h1>Work Experience</h1>
+      <h3>Amazon Web Services (AWS) – Seattle, WA</h3>
+      <p><i>Business Intelligence Engineer Intern</i></p>
+      <ul>
+        <li>Engineered an analytics platform in collaboration with stakeholders, integrating 20+ dashboards with ML tagging, summarization, and alerts to deliver faster insights for the AWS sales team, improving decision-making efficiency by 75%.</li>
+        <li>Developed clustering and AutoML models to find high-risk product-region segments with 83% accuracy, integrated results into Amazon QuickSight dashboards and delivered recommendations that informed retention and growth strategies.</li>
+      </ul>
+
+      <h3>IBM – Kochi, India</h3>
+      <p><i>Software Developer (DevOps)</i></p>
+      <ul>
+        <li>Automated workflows and recurring operational tasks by building CI/CD pipelines using Jenkins and Travis CI, leveraging Groovy, Python, and Bash scripting resulting in a 40% boost in team productivity.</li>
+        <li>Implemented automated cluster cleanup and configured usage alerts to notify on resource thresholds; resolved high-severity vulnerabilities, enhancing the security and resource utilization of the product by 30%.</li>
+        <li>Led the redesign and containerization of core data subsystems, improving scalability and deployment speed while boosting responsiveness of Watsonx.data services by 35%.</li>
+      </ul>
+
+      <h3>Reigate Builders</h3>
+      <p><i>Data Analyst (Part-time)</i></p>
+      <ul>
+        <li>Developed a Python-based automation framework for daily client follow-ups, integrated with Looker dashboards to provide real-time visibility into inquiry and closure trends, improving staff performance, driving a 30% increase in sales conversion.</li>
+        <li>Designed and deployed a workflow tracking system for hundreds of staff tasks with automated progress monitoring and alerting, equipping managers with dashboards that saved ~15 staff-hours weekly and cut task delays by 25%.</li>
+      </ul>
     </section>
 
     <!-- EDUCATION -->
-    <section id="education">
-      <h2>Education</h2>
-      <div class="card">
-        <img src="usc.png" alt="USC Logo">
-        <h3>University of Southern California, Marshall School of Business</h3>
-        <p><b>MS in Business Analytics (STEM)</b>, GPA: 3.8/4.0, Dec 2025</p>
-        <p>Coursework: Data-Driven Decision Making, Driving Business Transformation with GenAI & ML, Advanced SQL, Big Data</p>
-        <ul>
-          <li>Dean’s List for academic excellence</li>
-          <li>Board Member, Business Analytics Student Association (Professional Development team)</li>
-          <li>Secured early internship and mentored peers in obtaining opportunities</li>
-          <li>Teaching Assistant for MBA course "Business Environment and Leadership"</li>
-          <li>Completed coursework spanning machine learning, statistics, analytics, and business strategy</li>
-        </ul>
-      </div>
-      <div class="card">
-        <img src="apj.jpg" alt="KTU Logo">
-        <h3>APJ Abdul Kalam Technological University, Kerala, India</h3>
-        <p><b>Bachelor of Technology, Computer Science</b>, GPA: 3.7/4.0, Jun 2022</p>
-        <ul>
-          <li>Completed core CS coursework: Data Structures, Algorithms, OS, DBMS, Computer Networks</li>
-          <li>Taught programming to first-year students from non-technical backgrounds</li>
-          <li>Member of IEEE and ACM student chapters, active in coding events/workshops</li>
-          <li>Final project: Pulmonary Nodule Detection using segmentation and deep learning models (3D-CNN, multipath CNN)</li>
-        </ul>
-      </div>
+    <section id="education" class="tabcontent">
+      <h1>Education</h1>
+      <h3>University of Southern California, Marshall School of Business (USC) – Los Angeles, CA</h3>
+      <p><i>Master of Science in Business Analytics (STEM), GPA: 3.8/4.0, Dec 2025</i></p>
+      <p>Coursework: Data-Driven Decision Making, Driving Business Transformation with GenAI & ML, Advanced SQL, Big Data</p>
+      <ul>
+        <li>Dean’s List for academic excellence</li>
+        <li>Board Member, Business Analytics Student Association (BASA) – Professional Development team</li>
+        <li>Secured an internship early in the program as one of the first in the cohort, also mentored and helped peers obtain internships</li>
+        <li>Teaching Assistant for MBA course "Business Environment and Leadership"</li>
+        <li>Completed coursework spanning data science, machine learning, statistics, business analytics, and strategy</li>
+      </ul>
+
+      <h3>APJ Abdul Kalam Technological University – Kerala, India</h3>
+      <p><i>Bachelor of Technology, Computer Science, GPA: 3.7/4.0, Jun 2022</i></p>
+      <ul>
+        <li>Completed core CS coursework including Data Structures, Algorithms, OS, Databases, and Computer Networks</li>
+        <li>Taught programming to first-year students from non-technical backgrounds, drawing on my own transition from biology into computer science</li>
+        <li>Member of IEEE and ACM student chapters, actively involved in coding events and technical workshops</li>
+        <li>Final year project on Pulmonary Nodule Detection and Classification using segmentation and deep learning models (3D-CNN, multipath CNN)</li>
+      </ul>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="projects" class="tabcontent">
+      <h1>Projects</h1>
       <div class="grid">
         <div class="card">
           <h3>Employee Attrition Analysis (2025)</h3>
-          <p>Applied Difference-in-Differences and logistic regression to assess the impact of promotions and compensation on attrition, validated with propensity score methods.</p>
+          <p>Applied causal inference with Difference-in-Differences and logistic regression to workforce datasets to measure how promotions and compensation influenced attrition, validated results with propensity score methods.</p>
         </div>
         <div class="card">
           <h3>Real-Time Stock Market Analytics Pipeline (2024)</h3>
-          <p>Built a Spark & Airflow pipeline ingesting live stock data, stored in Snowflake, and visualized with Tableau for tracking price movements and volatility.</p>
+          <p>Built a real-time ETL pipeline ingesting streaming stock data with Spark & Airflow, transforming and storing in Snowflake, with Tableau dashboards tracking price movements, volatility, and sector trends.</p>
         </div>
         <div class="card">
           <h3>LSTM Autoencoder for Fraud Detection (2025)</h3>
-          <p>Developed unsupervised anomaly detection model on transaction time-series, flagging fraud with 91% accuracy.</p>
+          <p>Developed an LSTM autoencoder for unsupervised anomaly detection on transaction time-series, converting reconstruction error into anomaly scores and setting thresholds to flag fraudulent activity with 91% accuracy.</p>
         </div>
         <div class="card">
           <h3>Probabilistic Server Lifetime Estimation (2024)</h3>
-          <p>Designed deep neural model predicting transient server lifetimes from vCPU/RAM usage, achieving 95% accuracy in reliability forecasts.</p>
+          <p>Developed deep neural network model to estimate transient server lifetimes from vCPU and RAM usage, improving reliability predictions for cost-optimized deployments, achieving 95% accuracy.</p>
         </div>
       </div>
     </section>
 
-    <!-- OUTSIDE OF WORK -->
-    <section id="outside">
-      <h2>Outside of Work</h2>
+    <!-- OUTSIDE -->
+    <section id="outside" class="tabcontent">
+      <h1>Outside of Work</h1>
       <p>I value family, mentorship, and creative problem-solving. My free time is often spent mentoring peers, engaging with professional networks, and spending quality time with my family, which keeps me grounded and inspired.</p>
     </section>
 
   </div>
+
+  <script>
+    function openSection(sectionName, element) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(sectionName).style.display = "block";
+      element.classList.add("active");
+    }
+  </script>
+
 </body>
 </html>
+
 
