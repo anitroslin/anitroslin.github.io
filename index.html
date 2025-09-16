@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Anit Roslin Paul | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <!-- Correct Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
@@ -136,8 +135,7 @@
 
     /* Family Photo */
     .family-photo {
-      max-width: 600px;
-      width: 100%;
+      max-width: 100%;
       border-radius: 12px;
       margin-bottom: 15px;
       box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
@@ -156,6 +154,7 @@
         <a href="#" onclick="openSection('experience', this)">Experience</a>
         <a href="#" onclick="openSection('education', this)">Education</a>
         <a href="#" onclick="openSection('projects', this)">Projects</a>
+        <a href="#" onclick="openSection('awards', this)">Awards</a>
         <a href="#" onclick="openSection('outside', this)">Outside of Work</a>
       </nav>
     </div>
@@ -169,13 +168,16 @@
 
   <!-- MAIN -->
   <div class="main">
+
+    <!-- About -->
     <section id="about" class="active">
       <img src="IMG_2542.JPG" alt="Headshot" class="headshot">
       <h1>Anit Roslin Paul</h1>
       <p><b>Data Analytics Professional | MSBA @ USC | Ex-AWS, IBM, Shopalyst</b></p>
-      <p>I’m deeply passionate about automation, analytics, and data science. My journey has been about transforming raw data into insights that drive real-world impact...</p>
+      <p>I’m deeply passionate about automation, analytics, and data science...</p>
     </section>
 
+    <!-- Skills -->
     <section id="skills">
       <h1>Skills</h1>
       <div class="grid grid-2x2">
@@ -190,6 +192,7 @@
     <section id="experience">
       <h1>Work Experience</h1>
       <div class="grid grid-2x2">
+        <!-- AWS -->
         <div class="card">
           <img src="aws.png" alt="AWS">
           <h3>Amazon Web Services (AWS) – Business Intelligence Engineer Intern</h3>
@@ -198,6 +201,7 @@
             <li>Developed clustering and AutoML models to find high-risk product-region segments with 83% accuracy and delivered results in QuickSight dashboards.</li>
           </ul>
         </div>
+        <!-- IBM -->
         <div class="card">
           <img src="IMG-20230925-WA0021.jpg" alt="IBM">
           <h3>IBM – Software Developer (DevOps)</h3>
@@ -207,6 +211,7 @@
             <li>Led containerization of Watsonx.data with Docker/Kubernetes, boosting scalability and responsiveness by 35%.</li>
           </ul>
         </div>
+        <!-- Shopalyst -->
         <div class="card">
           <img src="shopalyst.png" alt="Shopalyst">
           <h3>Shopalyst – Data Analyst</h3>
@@ -215,6 +220,7 @@
             <li>Deployed ML models on AWS SageMaker, cutting latency by 20% for real-time digital commerce analytics.</li>
           </ul>
         </div>
+        <!-- Reigate -->
         <div class="card">
           <img src="reigate.jpg" alt="Reigate Builders">
           <h3>Reigate Builders – Data Analyst (Part-time)</h3>
@@ -267,43 +273,41 @@
       </div>
     </section>
 
-    <section>
+    <!-- Awards (FIXED with ID) -->
+    <section id="awards">
       <h1>Awards</h1>
-      <div class="card">
+      <div class="grid grid-2x2">
+        <div class="card">
           <img src="IMG_0769.jpg" alt="Award">
           <h3>IBM Growth Award for Exceptional Contribution</h3>
           <p>Received the IBM Growth Award within six months of joining IBM, following a nomination by the Program Director of watsonx.data.</p>
-      </div>
-      <div class="card">
+        </div>
+        <div class="card">
           <img src="ghc.jpg" alt="GHC">
           <h3>Grace Hopper Celebration Scholarship by AnitaB.org</h3>
           <p>Received the Grace Hopper Celebration (GHC) Scholarship Award to attend the world’s largest gathering of women technologists, being the only recipient from my undergraduate program.</p>
+        </div>
       </div>
     </section>
-    <!-- Outside of Work -->
-<section id="outside">
-  <h1>Outside of Work</h1>
 
-  <!-- Family Section -->
-  <div class="card">
-    <img src="20230217_114248.jpg" alt="Family Photo" class="family-photo">
-    <p>
-      My family is my greatest inspiration. My father is an engineer, my mother is a mathematics teacher, 
-      and my sister is a doctor with the NHS in the UK. Their dedication and values motivate me to work hard every day.
-    </p>
-  </div>
+    <!-- Outside of Work (aligned with grid) -->
+    <section id="outside">
+      <h1>Outside of Work</h1>
+      <div class="grid grid-2x2">
+        <div class="card">
+          <img src="20230217_114248.jpg" alt="Family Photo" class="family-photo">
+          <p>My family is my greatest inspiration. My father is an engineer, my mother is a mathematics teacher, 
+          and my sister is a doctor with the NHS in the UK. Their dedication and values motivate me to work hard every day.</p>
+        </div>
+        <div class="card">
+          <img src="myusc.jpg" alt="University of Southern California">
+          <p>At USC, I am serving as a Professional Development Specialist in the Business Analytics Student Association, 
+          where I conduct events, workshops, and networking sessions to support peer growth and industry engagement. 
+          These experiences continue to strengthen my leadership skills while fostering a collaborative learning community.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- College & Extracurriculars Section -->
-  <div class="card">
-    <img src="myusc.jpg" alt="University of Southern California">
-    <p>
-      At USC, I am serving as a Professional Development Specialist in the Business Analytics Student Association, 
-      where I conduct events, workshops, and networking sessions to support peer growth and industry engagement. 
-      These experiences continue to strengthen my leadership skills while fostering a collaborative learning community.
-    </p>
-  </div>      
-
-</section>
   </div>
 
   <script>
