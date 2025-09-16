@@ -12,6 +12,7 @@
       display: flex;
       background: #f9f9f9;
     }
+
     /* Sidebar */
     .sidebar {
       width: 250px;
@@ -31,6 +32,7 @@
       color: #007acc;
     }
     .sidebar nav {
+      flex-grow: 1;
       display: flex;
       flex-direction: column;
       padding: 0 10px;
@@ -49,13 +51,19 @@
     }
     .sidebar-footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
+      border-top: 1px solid #333;
     }
     .sidebar-footer a {
       color: #fff;
-      margin: 0 8px;
-      font-size: 1.3rem;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: color 0.3s;
     }
+    .sidebar-footer a:hover {
+      color: #007acc;
+    }
+
     /* Main */
     .main {
       margin-left: 250px;
@@ -64,18 +72,20 @@
     }
     section {
       display: none;
-      animation: fade 0.5s ease-in-out;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease;
     }
     section.active {
       display: block;
+      opacity: 1;
+      transform: translateY(0);
     }
-    @keyframes fade {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
+
     h1 { font-size: 2rem; margin-bottom: 15px; }
     p { line-height: 1.6; }
     ul { margin: 0; padding-left: 20px; }
+
     /* Headshot */
     .headshot {
       width: 200px;
@@ -85,15 +95,20 @@
       border: 4px solid #007acc;
       margin-bottom: 20px;
     }
+
     /* Grid + Cards */
     .grid { display: grid; gap: 20px; }
     .grid-2x2 { grid-template-columns: repeat(2, 1fr); }
-    .grid-4 { grid-template-columns: repeat(4, 1fr); }
     .card {
       background: #fff;
       border-radius: 12px;
       padding: 20px;
       box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
     }
     .card img {
       width: 100%;
@@ -102,18 +117,28 @@
       border-radius: 10px;
       margin-bottom: 10px;
     }
+
+    /* Skills */
     .skill-box {
       background: #fff;
       border-radius: 10px;
       padding: 15px;
       text-align: center;
       box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
+    .skill-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Family Photo */
     .family-photo {
       max-width: 600px;
       width: 100%;
       border-radius: 12px;
       margin-bottom: 15px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -167,7 +192,7 @@
       <h1>Work Experience</h1>
       <div class="grid grid-2x2">
         <div class="card">
-          <img src="IMG_4057.jpg" alt="AWS">
+          <img src="aws.png" alt="AWS">
           <h3>Amazon Web Services (AWS) – Business Intelligence Engineer Intern</h3>
           <ul>
             <li>Engineered an analytics platform integrating 20+ dashboards with ML tagging, summarization, and alerts — boosting decision-making efficiency by 75%.</li>
@@ -253,8 +278,11 @@
 
   <script>
     function openSection(id, el) {
-      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.querySelectorAll('section').forEach(sec => {
+        sec.classList.remove('active');
+      });
       document.getElementById(id).classList.add('active');
+
       document.querySelectorAll('.sidebar nav a').forEach(a => a.classList.remove('active'));
       el.classList.add('active');
     }
