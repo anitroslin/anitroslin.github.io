@@ -1,107 +1,98 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  display: flex;
   background: #f9f9f9;
-  display: flex;
+  color: #333;
 }
 
-/* Container */
-.container {
-  display: flex;
-  width: 100%;
-}
-
-/* Sidebar */
+/* SIDEBAR */
 .sidebar {
   width: 250px;
-  background: #1a1a1a;
+  background: #111;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  height: 100vh;
   position: fixed;
+  height: 100vh;
 }
 .sidebar h2 {
-  font-size: 1.4rem;
-  margin-bottom: 20px;
+  color: #007acc;
 }
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
+.sidebar nav {
+  margin-top: 40px;
+  flex-grow: 1;
 }
-.sidebar nav ul li {
+.sidebar nav a {
+  display: block;
   padding: 12px;
-  cursor: pointer;
-  transition: background 0.3s;
+  color: #fff;
+  text-decoration: none;
   border-radius: 6px;
+  margin-bottom: 10px;
 }
-.sidebar nav ul li:hover,
-.sidebar nav ul li.active {
+.sidebar nav a.active,
+.sidebar nav a:hover {
   background: #007acc;
 }
-.sidebar-links {
-  display: flex;
-  gap: 15px;
-  font-size: 1.4rem;
+.sidebar-footer {
+  margin-top: auto;
 }
-.sidebar-links a {
+.sidebar-footer a {
   color: #fff;
+  margin: 0 8px;
+  font-size: 1.4rem;
   transition: color 0.3s;
 }
-.sidebar-links a:hover {
+.sidebar-footer a:hover {
   color: #007acc;
 }
 
-/* Main content */
-.content {
+/* MAIN */
+.main {
   margin-left: 270px;
   padding: 40px;
-  flex: 1;
+  flex-grow: 1;
 }
-.tab {
-  display: none;
+section {
+  margin-bottom: 60px;
 }
-.tab.active {
-  display: block;
-  animation: fadeIn 0.5s;
+h1, h2 {
+  font-weight: 700;
 }
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Headshot */
 .headshot {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
+  object-fit: cover;
   border: 5px solid #007acc;
-  display: block;
-  margin: auto;
+  margin-bottom: 20px;
+}
+.tagline {
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
-/* Cards */
-.grid-2x2 {
+/* GRID & CARDS */
+.grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 .card {
   background: #fff;
-  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .card img {
   width: 100%;
-  height: 200px;
+  max-height: 180px;
   object-fit: contain;
   border-radius: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
-.card h3 {
-  margin: 10px 0;
-}
+
 
